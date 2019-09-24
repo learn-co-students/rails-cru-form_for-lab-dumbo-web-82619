@@ -1,0 +1,19 @@
+<h1>These are our available songs:</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @songs.each do |song| %>
+      <tr>
+        <td>
+          <p><%= link_to song.name, song %></p>
+        </td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
